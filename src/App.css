@@ -1,0 +1,33 @@
+.tag-name{
+    margin-bottom:70px;
+    font-family: "Saira Extra Condensed","Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bold;
+    font-size: 5.5rem;
+}
+.tag-name span{
+    color:#a2a2a2;
+}
+
+
+.content{
+    float: left;
+    margin-left: 280px;
+    transition: margin-left .3s;
+}
+
+/* Mobile window*/
+@media screen and (max-width:830px){
+    .length-bar{
+        display: none;
+    }
+    .content{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .tag-name{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .len-bar{display:block;}
+    .bars i{display: block;}
+}

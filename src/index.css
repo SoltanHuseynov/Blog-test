@@ -1,0 +1,98 @@
+*{
+  margin:auto;
+  padding:auto;
+}
+.win{
+  font-family:"VT323","monospace";
+
+}
+.length-bar{
+  position: fixed;
+  height: 100%;
+  width: 17em;
+  z-index: 1;
+  top: 0;
+  background-color: black;
+  transition: 0.3s ;
+}
+/* list style*/
+.bar-set{
+  margin-top:30pt ;
+}
+.bar-set li{
+  justify-content: center;
+  list-style: none;
+  font-size: 20pt;
+  text-transform: uppercase;
+  padding: 5px;
+  letter-spacing: 3.5px;
+}
+.bar-set li a{
+  text-decoration: none;
+  color:rgb(0, 128, 0);
+}
+/*bar hover*/
+.bar-set li a:hover{
+  transition: 0.2s;
+  color: white;
+  
+}
+/* bar-log*/
+.length-bar img{
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.bar-name p{
+  color:rgb(0, 128, 0);
+  font-size: 40pt;
+  text-align: center;
+  
+}
+.bar-social a {
+  font-size: 25px;
+  margin: 15px;
+  color: #343a40;
+}
+.bar-social i{
+  margin-top: 25px;
+}
+
+.len-bar{
+  top:0;
+  background-color: black;
+  display: none;
+  width: 100%;
+  position: fixed;
+  color:black;
+}
+.bars i{
+  margin:30px 20px 40px;
+  width: 0px;
+  height: 0px;
+  font-size: 2.1rem;
+  cursor: pointer;
+  display: none;
+}
+.part-js a{
+  text-decoration: none;
+  color:black;
+}
+.part-js a:hover{
+  color:rgb(0, 128, 0);
+}
+.part-py a{
+  text-decoration: none;
+  color:black;
+}
+.part-py a:hover{
+  color:rgb(0, 128, 0);
+}
+.part-php a{
+  text-decoration: none;
+  color:black;
+}
+.part-php a:hover{
+  color:rgb(0, 128, 0);
+}
