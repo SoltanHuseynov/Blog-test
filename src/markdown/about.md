@@ -5,4 +5,4 @@
 - ### language: `Pthon JavaScript PHP`.</br>
 - ### Database: `MySql MongoDB`.</br>
 - ### Os System: `Linux Ubuntu Window MacOs`.
-- ### Gmail: `sultan.huseynov20@gmail.com`..
+- ### Gmail: `sultan.huseynov20@gmail.com`.
