@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkproje=self.webpackChunkproje||[]).push([[962],{4962:function(e,a,p){e.exports=p.p+"static/media/language.836eba19d20ec629b927.md"}}]);

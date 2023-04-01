@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkproje=self.webpackChunkproje||[]).push([[103],{1103:function(e,c,p){e.exports=p.p+"static/media/framework.7e4fac515ec6215e3e8b.md"}}]);
