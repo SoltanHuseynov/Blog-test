@@ -20,7 +20,7 @@ class App extends Component{
         return(
             <Router>
                 <Route exact path="/" component={About}/>
-                <Route path="https://soltanhuseynov.pro/Framework" component={Framework}/>
+                <Route path="/Framework" component={Framework}/>
                 <Route path="/Game" component={Game}/>
                 <Route path="/Language" component={Language}/>
                 <Route path="/Library" component={Library}/>
