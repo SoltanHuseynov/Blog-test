@@ -1,5 +1,5 @@
 import React,{Component} from "react"
-import {social} from "../api/data.json"
+import social from "../api/data.json"
 import {CloseNav,OpenNav} from "../SideBar"
 
 class Game extends Component{
@@ -44,7 +44,7 @@ class Game extends Component{
                <div className="len-bar" style={{display:this.state.topBar}}>-</div>
                 <div className="length-bar" style={{display:this.state.display}}>
                     <div className="bar-name">
-                        <img src="../log/logo.png" width="200px"></img>
+                        <img src="../log/logo.jpg" width="200px"></img>
                         <p>Soltan H</p>
                     </div>
                     <ul className="bar-set" >

@@ -1,7 +1,7 @@
 import React,{Component} from "react"
 import {FramText} from "../data/main"
 import { CloseNav,OpenNav } from "../SideBar"
-import {social} from "../api/data.json"
+import social from "../api/data.json"
 
 
 class Framework extends Component{
@@ -46,7 +46,7 @@ class Framework extends Component{
                 <div className="len-bar" style={{display:this.state.topBar}}>-</div>
                <div className="length-bar" style={{display:this.state.display}}>
                     <div className="bar-name">
-                        <img src="../log/logo.png" width="200px"></img>
+                        <img src="../log/logo.jpg" width="200px"></img>
                         <p>Soltan H</p>
                     </div>
                     <ul className="bar-set" >
@@ -63,6 +63,7 @@ class Framework extends Component{
                         <a href={social.github}><i className="fab fa-github"></i></a>
                         <a href={social.linkedin}><i className="fab fa-linkedin"></i></a>
                     </div>
+                    
                 </div>
                 <div style={{marginLeft:this.state.marginLeft}}>
                     {button}

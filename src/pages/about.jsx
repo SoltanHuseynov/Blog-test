@@ -3,7 +3,7 @@ import React, {Component} from "react"
 import {Text} from "../data/main"
 import { CloseNav,OpenNav } from "../SideBar"
 
-import {social} from "../api/data.json"
+import social from "../api/data.json"
 
 class About extends Component{
     constructor(props){
@@ -47,7 +47,7 @@ class About extends Component{
                 <div className="len-bar" style={{display:this.state.topBar}}>-</div>
                 <div className="length-bar" style={{display:this.state.display}}>
                     <div className="bar-name">
-                        <img src="../log/logo.png" width="200px"></img>
+                        <img src="../log/logo.jpg" width="200px"></img>
                         <p>Soltan H</p>
                     </div>
                     

@@ -28,7 +28,7 @@ function Markdown(file){
 function Text(){
     return (
         <div className="content">
-            <div>
+            <div cla>
                 <p><ReactMarkdown rehypePlugins={[rehypeRaw]} children={Markdown(file_name[0])}/></p>
             </div>
         </div>
