@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 //import ReactMarkdown from "react-markdown"
+import { Link } from "react-router-dom"
 import {Text} from "../data/main"
 import { CloseNav,OpenNav } from "../SideBar"
 
@@ -53,7 +54,7 @@ class About extends Component{
                     
                     <ul className="bar-set">
                         <li><a  style={{color:"white"}} href="/" >Biyografia  <i className="fas fa-user"></i></a></li> 
-                        <li><a href="/Framework">Framework <i className="fas fa-brackets-curly"></i></a></li>
+                        <li><Link to="/Framework">Framework <i className="fas fa-brackets-curly"></i></Link></li>
                         <li><a href="/Language">Languages <i  className="fas fa-laptop-code"></i></a> </li>
                         <li><a href="/Library">Library <i  className="fal fa-books"></i></a></li>
                         <li><a href="/Game">Game <i className="fas fa-gamepad"></i></a></li>
