@@ -7,6 +7,8 @@ import Framework from "./pages/Framework"
 import Game from "./pages/Game"
 import Language from "./pages/Language"
 import Library from "./pages/lbrary"
+import Blog from "./pages/blog"
+import Runway from "./pages/runway"
 
 import{
     BrowserRouter as Router,
@@ -20,10 +22,12 @@ class App extends Component{
         return(
             <Router>
                 <Route exact path="/" component={About}/>
-                <Route path="/Framework" component={Framework}/>
+                <Route exact path="/Framework" component={Framework}/>
                 <Route path="/Game" component={Game}/>
                 <Route path="/Language" component={Language}/>
                 <Route path="/Library" component={Library}/>
+                <Route path="/Blog" component={Blog}/>
+                <Route path="/runway" component={Runway}/>
             </Router>
         )
     }

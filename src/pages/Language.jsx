@@ -2,6 +2,8 @@ import React,{Component} from "react"
 import {LanguageText} from "../data/main"
 import { CloseNav,OpenNav } from "../SideBar"
 import social from "../api/data.json"
+import { Link } from "react-router-dom"
+
 
 class Language extends Component{
     constructor(props){
@@ -49,11 +51,13 @@ class Language extends Component{
                         <p>Soltan H</p>
                     </div>
                     <ul className="bar-set" >
-                        <li><a   href="/" >Biyografia  <i className="fas fa-user"></i></a></li> 
-                        <li><a href="/Framework">Framework <i className="fas fa-brackets-curly"></i></a></li>
-                        <li><a style={{color:"white"}}  href="/Language">Languages <i  className="fas fa-laptop-code"></i></a> </li>
-                        <li><a href="/Library">Library <i  className="fal fa-books"></i></a></li>
-                        <li><a href="/Game">Game <i className="fas fa-gamepad"></i></a></li>
+                        <li><Link to="/" >Biyografia  <i className="fas fa-user"></i></Link></li> 
+                        <li><Link to="/Framework">Framework <i className="fas fa-brackets-curly"></i></Link></li>
+                        <li><Link to="/Language" style={{color:"white"}}>Languages <i  className="fas fa-laptop-code"></i></Link> </li>
+                        <li><Link to="/Library">Library <i  className="fal fa-books"></i></Link></li>
+                        <li><Link to="runway">RUNWAY <i className="fas fa-running"></i></Link></li>
+                        <li><Link to="/Game">Game <i className="fas fa-gamepad"></i></Link></li>
+                        <li><Link to="/blog">BLOG <i className="fas fa-rss-square"></i></Link></li>
    
                     </ul>
                     <div className="bar-social">

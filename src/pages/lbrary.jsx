@@ -1,6 +1,8 @@
 import React,{Component} from "react"
 import social from "../api/data.json"
 import { CloseNav,OpenNav } from "../SideBar"
+import { Link } from "react-router-dom"
+
 
 class Library extends Component{
     constructor(props){
@@ -48,11 +50,13 @@ class Library extends Component{
                         <p>Soltan H</p>
                     </div>
                     <ul className="bar-set" >
-                        <li><a   href="/" >Biyografia  <i className="fas fa-user"></i></a></li> 
-                        <li><a  href="/Framework">Framework <i className="fas fa-brackets-curly"></i></a></li>
-                        <li><a  href="/Language">Languages <i  className="fas fa-laptop-code"></i></a> </li>
-                        <li><a style={{color:"white"}} href="/Library">Library <i  className="fal fa-books"></i></a></li>
-                        <li><a href="/Game">Game <i className="fas fa-gamepad"></i></a></li>
+                        <li><Link to="/" >Biyografia  <i className="fas fa-user"></i></Link></li> 
+                        <li><Link to="/Framework">Framework <i className="fas fa-brackets-curly"></i></Link></li>
+                        <li><Link to="/Language">Languages <i  className="fas fa-laptop-code"></i></Link> </li>
+                        <li><Link to="/Library" style={{color:"white"}}>Library <i  className="fal fa-books"></i></Link></li>
+                        <li><Link to="runway">RUNWAY <i className="fas fa-running"></i></Link></li>
+                        <li><Link to="/Game">Game <i className="fas fa-gamepad"></i></Link></li>
+                        <li><Link to="/blog">BLOG <i className="fas fa-rss-square"></i></Link></li>
    
                     </ul>
                     <div className="bar-social">
@@ -64,6 +68,7 @@ class Library extends Component{
                 </div>
                 <div style={{marginLeft:this.state.marginLeft}}>
                     {button}
+                    <h1>Library</h1>
                 </div>
             </div>
         )

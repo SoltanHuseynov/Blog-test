@@ -1,12 +1,12 @@
 import React,{Component} from "react"
-import {FramText} from "../data/main"
-import { CloseNav,OpenNav } from "../SideBar"
 import social from "../api/data.json"
+import { CloseNav,OpenNav } from "../SideBar"
 import { Link } from "react-router-dom"
 
-class Framework extends Component{
+
+class Runway extends Component{
     constructor(props){
-        super(props)
+       super(props)
        this.open = this.open.bind(this);
        this.close= this.close.bind(this);
        this.state={
@@ -37,24 +37,24 @@ class Framework extends Component{
         let button;
 
         if (isLoggedIn) {
-        button = <OpenNav onClick={this.open} />;
+            button = <OpenNav onClick={this.open} />;
         } else {
-        button = <CloseNav onClick={this.close} />;
+            button = <CloseNav onClick={this.close} />;
         }
         return(
-            <div className="win">
+            <div className="win"> 
                 <div className="len-bar" style={{display:this.state.topBar}}>-</div>
-               <div className="length-bar" style={{display:this.state.display}}>
+                <div className="length-bar" style={{display:this.state.display}}>
                     <div className="bar-name">
                         <img src="../log/logo.jpg" width="200px"></img>
                         <p>Soltan H</p>
                     </div>
                     <ul className="bar-set" >
-                        <li><Link to="/" >Biyografia  <i className="fas fa-user"></i></Link></li> 
-                        <li><Link to="/Framework" style={{color:"white"}} >Framework <i className="fas fa-brackets-curly"></i></Link></li>
+                        <li><Link   to="/" >Biyografia  <i className="fas fa-user"></i></Link></li> 
+                        <li><Link to="/Framework">Framework <i className="fas fa-brackets-curly"></i></Link></li>
                         <li><Link to="/Language">Languages <i  className="fas fa-laptop-code"></i></Link> </li>
                         <li><Link to="/Library">Library <i  className="fal fa-books"></i></Link></li>
-                        <li><Link to="runway">RUNWAY <i className="fas fa-running"></i></Link></li>
+                        <li><Link to="runway" style={{color:"white"}}>RUNWAY <i className="fas fa-running"></i></Link></li>
                         <li><Link to="/Game">Game <i className="fas fa-gamepad"></i></Link></li>
                         <li><Link to="/blog">BLOG <i className="fas fa-rss-square"></i></Link></li>
    
@@ -65,14 +65,13 @@ class Framework extends Component{
                         <a href={social.github}><i className="fab fa-github"></i></a>
                         <a href={social.linkedin}><i className="fab fa-linkedin"></i></a>
                     </div>
-                    
                 </div>
                 <div style={{marginLeft:this.state.marginLeft}}>
                     {button}
-                    <FramText/>
+                    <h1>runway</h1>
                 </div>
             </div>
         )
     }
-} 
-export default Framework
+}
+export default Runway

@@ -53,12 +53,13 @@ class About extends Component{
                     </div>
                     
                     <ul className="bar-set">
-                        <li><a  style={{color:"white"}} href="/" >Biyografia  <i className="fas fa-user"></i></a></li> 
+                        <li><Link  style={{color:"white"}} to="/" >Biyografia  <i className="fas fa-user"></i></Link></li> 
                         <li><Link to="/Framework">Framework <i className="fas fa-brackets-curly"></i></Link></li>
-                        <li><a href="/Language">Languages <i  className="fas fa-laptop-code"></i></a> </li>
-                        <li><a href="/Library">Library <i  className="fal fa-books"></i></a></li>
-                        <li><a href="/Game">Game <i className="fas fa-gamepad"></i></a></li>
-   
+                        <li><Link to="/Language">Languages <i  className="fas fa-laptop-code"></i></Link> </li>
+                        <li><Link to="/Library">Library <i  className="fal fa-books"></i></Link></li>
+                        <li><Link to="runway">RUNWAY <i className="fas fa-running"></i></Link></li>
+                        <li><Link to="/Game">Game <i className="fas fa-gamepad"></i></Link></li>
+                        <li><Link to="/blog">BLOG <i className="fas fa-rss-square"></i></Link></li>
                     </ul>
                     <div className="bar-social" >
                         <a href={social.twitter}><i className="fab fa-twitter"></i></a>
